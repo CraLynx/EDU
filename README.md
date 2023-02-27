@@ -1,64 +1,40 @@
-<p align="center"><a target="_blank"><img src="https://github.com/CraLynx/EDU/blob/main/%D0%BB%D0%BE%D0%B3%D0%BE.png" width="400"></a></p>
+<p align="center"><a target="_blank"><img src="https://github.com/CraLynx/EDU/blob/main/Logo/logo-site.png" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Об EduEncryption
+Веб-приложения для обучения основным алгоритмам шифрования создана благодаря выпускной квалификационной работе.
+В настоящий момент поиск информации в интернете очень время затратный и иногда можно встретить сайты с большим количеством ненужной информации, что приводит к пропаданию интереса в изучении данной науки. Также человек решивший начать изучать криптографию может пропустить азы, что поспособствует в непонимании изучения более сложных тем в криптографии.
+Поэтому получение знания на сайте, где информация структурирована, «очищенна» от ненужной информации не только не охладит интерес и понизит время затратность, но и повысит квалификацию будущего специалиста. Также можно отметить, что имеющиеся на сайтах тесты, также повысят квалификацию будущих сотрудников.
+   
+   
+   
+## Как развернуть на локальном компьютере(Для администраторов)
+## 1. Необходимые компоненты
+- Среда разработки [PhpStorm](https://www.jetbrains.com/ru-ru/phpstorm/).
+- Пакетны менеджер [Composer](https://getcomposer.org/).
+- Фреймворк [Laravel 9.0](https://laravel.com/).
+- Язык программирования [Php 8.1](https://www.php.net/).
+- Файлы проекта сайта [EduEncryption](https://github.com/CraLynx/EDU).
 
-## About Laravel
+## 2. Развертывание
+После загрузки и установки всех необходимых компонентов, рекомендуется в корне проекта в папке public через командную строку выполнить следующую команду: php -S localhost:80 - запуск dev-сервера
+Ниже представено выполнение команды.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center"><a target="_blank"><img src="https://github.com/CraLynx/EDU/blob/main/Logo/start_localhost.PNG" width="800"></a></p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+После этого будет запуститься сервер и будет доступна страница localhost/
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 3. Для полного функционирования проекта
+Рекомендуется установить базу данных с определением таблиц для корректно работы веб-приложения
 
-## Learning Laravel
+### Папки проекта Laravel:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **./.env - файл настроек**
+- **public/ - папка, в которую обычно "заходит" пользователь**
+- **routes/web.php - здесь описываются маршруты сайта**
+-	**resources/views - здесь хранятся html-страницы, описываемые с помощью шаблонизатора Blade**
+-	**databases/migrations - здесь хранятся php-скрипты, описывающие таблицы в базе данных (миграции).**
+-	**config/app.php - конфигурация приложения**
+-	**config/auth.php - конфигурация аутентификации/авторизации**
+-	**app/Http/Controllers - контроллеры (бизнес-логика приложения)**
+-	**app/Models - модели (данные приложения)**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
